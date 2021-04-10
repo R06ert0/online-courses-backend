@@ -1,10 +1,10 @@
 import { newAdmin } from '../Models/newadmin.model';
-import { Report } from '../models/report.model';
-import { Admin } from '../models/admin.model';
 import { Admins } from './admins.entity';
 import { Injectable } from "@nestjs/common";
 import { Repository } from "typeorm";
 import { InjectRepository } from '@nestjs/typeorm';
+import { Report } from 'src/Models/report.model';
+import { Admin } from 'src/Models/admin.model';
 
 
 @Injectable()
