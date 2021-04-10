@@ -1,4 +1,4 @@
-import { newAdmin } from '../models/newadmin.model';
+import { newAdmin } from '../Models/newadmin.model';
 import { Report } from '../models/report.model';
 import { Admin } from '../models/admin.model';
 import { Admins } from './admins.entity';
