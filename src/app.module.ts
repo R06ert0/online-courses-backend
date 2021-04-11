@@ -7,6 +7,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { HomeModule } from './Home/home.module';
 import { ProverbsModule } from './Proverbs/proverbs.module';
+import { ConfigModule } from '@nestjs/config';
 
 
 
@@ -20,6 +21,9 @@ import { ProverbsModule } from './Proverbs/proverbs.module';
       password: 'Powerofwill12.',
       database: 'OnlineCourses',
       entities: [Proverbs, Admins]
+    }),
+    ConfigModule.forRoot({
+      ignoreEnvFile: true
     }),
     HomeModule,
     AdminModule,
