@@ -5,7 +5,7 @@ global.atob = require('atob');
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
   app.enableCors();
-  await app.listen(8080, 'https://online-courses-backend-server.herokuapp.com/');
+  await app.listen(8080);
   //process.env.PORT
 }
 bootstrap();
